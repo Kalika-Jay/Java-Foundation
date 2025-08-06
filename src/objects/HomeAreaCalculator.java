@@ -10,5 +10,7 @@ public class HomeAreaCalculator {
        Rectangle room2 = new Rectangle(30,75);
        double areaOfRoom2 = room2.calculateArea();
 
+       System.out.println("The area of the room1 is: " + areaOfRoom1);
+       System.out.println("The area of the room2 is: " + areaOfRoom2);
     }
 }
