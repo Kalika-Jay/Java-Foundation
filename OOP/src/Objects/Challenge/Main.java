@@ -8,6 +8,8 @@ public class Main {
         System.out.println(employee2.salary);
         employee2.raiseSalary();
         System.out.println(employee2.salary);
+        employee1.raiseSalary();
+        System.out.println(employee1.salary);
 
     }
 
