@@ -3,17 +3,17 @@ package Objects;
 import java.awt.*;
 
 public class Tree {
-    double height;
-    double trunkDiameter;
-    TreeType treetype;
-    static Color TrunkColor = new Color(85, 40, 40);
+    private double height;
+    private double trunkDiameter;
+    private TreeType treetype;
+    protected static Color TrunkColor = new Color(85, 40, 40);
 
-    Tree(double heigh,double trunkDiameter,TreeType treetype){
+    public Tree(double heigh,double trunkDiameter,TreeType treetype){
         this.height = heigh;
         this.trunkDiameter = trunkDiameter;
         this.treetype = treetype;
     }
-    void grow() {
+    public void grow() {
         this.height = this.height + 10;
         this.trunkDiameter = this.trunkDiameter + 1;
     }
@@ -21,9 +21,21 @@ public class Tree {
         System.out.println("Look out for that tree!"+TrunkColor);
     }
 
-    void annouceTallTree(){
+    public void annouceTallTree(){
         if(this.height>20){
             System.out.println(this.treetype+" tree is too big");
         }
+    }
+    public double getHeight() {
+        return height;
+    }
+    public double getTrunkDiameter() {
+        return trunkDiameter;
+    }
+    public void setTrunkDiameter(double trunkDiameter) {
+        this.trunkDiameter = trunkDiameter;
+    }
+    public TreeType getTreetype() {
+        return treetype;
     }
 }

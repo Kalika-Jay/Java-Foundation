@@ -5,11 +5,11 @@ public class Main {
         Tree oakTree = new Tree(25,5,TreeType.OAK);
         Tree mapleTree = new Tree(30,6,TreeType.MAPLE);
 
-        if(oakTree.height>20){
-            System.out.println(oakTree.treetype+" tree is too big");
+        if(oakTree.getHeight()>20){
+            System.out.println(oakTree.getTreetype()+" tree is too big");
         }
-        if(mapleTree.height>20){
-            System.out.println(mapleTree.treetype+" tree is too big");
+        if(mapleTree.getHeight()>20){
+            System.out.println(mapleTree.getTreetype()+" tree is too big");
         }
 
         oakTree.annouceTallTree();
