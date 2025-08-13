@@ -7,6 +7,5 @@ public class Main {
         System.out.println(account1.getBalance());
         account1.deposit(200.0);
         System.out.println(account1.getBalance());
-
     }
 }
